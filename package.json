@@ -1,0 +1,15 @@
+{
+  "name": "persistron",
+  "version": "0.0.0",
+  "description": "Simple persistence ",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"Test successful\")"
+  },
+  "author": "Neel Patel <neelp22@gmail.com> (http://www.github.com/darthneel)",
+  "license": "ISC",
+  "dependencies": {
+    "locus": "^0.1.0",
+    "underscore": "^1.8.2"
+  }
+}

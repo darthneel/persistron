@@ -64,8 +64,6 @@ module.exports = {
       return
     }
 
-    console.log("hit");
-
     var data = JSON.parse(fs.readFileSync(filename));
 
     var indexOfMatch;
@@ -86,6 +84,17 @@ module.exports = {
     return data
   },
   deleteAll: function(filename) {
+    fs.readFile(filename, function(err, data){
+      fs.writeFile(filename, "", function(err){
+        if (err) {
+          console.log(err);
+        }
+      });
+
+    return data
+    })
+  },
+  deleteFile: function(filename) {
     fs.unlink(filename, function(err) {
       if (err) {
         console.log(err);

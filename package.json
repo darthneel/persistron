@@ -8,5 +8,8 @@
   },
   "author": "Neel Patel <neelp22@gmail.com> (http://www.github.com/darthneel)",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "mocha": "^2.2.1",
+    "chai": "^2.1.2"
+  }
 }
